@@ -66,6 +66,7 @@ table {
 	margin-top: 15px;
 }
 
+
 .side-tabs {
 	list-style: none;
 	font-family: 'Open Sans', sans-serif;
@@ -81,11 +82,16 @@ table {
 	background-color: rgb(200, 253, 253);
 	padding: 7px;
 	text-align: center;
-
+	cursor: pointer;
 }
 
 .side-tabs li:hover {
 	background-color: #99CCFF;
+}
+
+.main-wrap {
+	display: flex;
+	width: 722px;
 }
 
 .portfolio.content-wrap {
@@ -116,6 +122,7 @@ table {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	max-width: 100px;
+	cursor: pointer;
 }
 
 .top-tabs li:hover {
@@ -135,4 +142,26 @@ footer {
 	font-family: 'Open Sans', sans-serif;
 	padding: 10px;
 	font-size: 0.9em;
+}
+
+.hide {
+	display: none;
+}
+
+.side-tabs .select {
+	background-color: rgb(236, 255, 255);
+}
+
+.top-tabs .select {
+	background-color: rgb(236, 255, 255);
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
