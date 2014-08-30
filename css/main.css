@@ -165,3 +165,7 @@ footer {
     -o-user-select: none;
     user-select: none;
 }
+
+.content {
+	word-wrap: break-word;
+}

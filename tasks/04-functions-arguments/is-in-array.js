@@ -6,8 +6,6 @@ function isInArray() {
 	for(var i = 0;i<arguments.length-1;i++){
 		setOfElements.push(arguments[i]);
 	}
-	console.log(setOfElements);
-	console.log(setOfLastElement);
 	for(var i = 0;i < setOfElements.length;i++){
 		currentElementsContains = false;
 		for(j = 0;j<setOfLastElement.length;j++){
