@@ -48,7 +48,7 @@ table {
 
 .portfolio-main {
 	outline: 1px solid;
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto;
 	margin-top: 20px;
 	background-color: #CCCCCC;
@@ -91,11 +91,9 @@ table {
 
 .main-wrap {
 	display: flex;
-	width: 722px;
 }
 
 .portfolio.content-wrap {
-	width: 720px;
 	float: right;
 	margin: 5px;
 	/* background-color: #FFFFFF; */
@@ -168,4 +166,7 @@ footer {
 
 .content {
 	word-wrap: break-word;
+	font-size: 15px;
+	font-family: monospace;
+	width: 800px;
 }
