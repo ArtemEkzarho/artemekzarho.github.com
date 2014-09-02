@@ -1,4 +1,4 @@
 {
 	"title": "Функции и аргументы",
-	"files": ["description.md", "every.js", "extend-object.js", "is-in-array.js", "query-string-to-object.js", "summator.js"]
+	"files": ["description.md", "is-in-array.js", "extend-object.js", "every.js", "sum.js", "query-string-to-object.js"]
 }

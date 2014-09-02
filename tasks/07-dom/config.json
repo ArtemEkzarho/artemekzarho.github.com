@@ -1,0 +1,4 @@
+{
+	"title": "DOM",
+	"files": ["description.md", "next.js", "add-class.js", "remove-class.js", "has-class.js", "closest.js", "createList.js"]
+}

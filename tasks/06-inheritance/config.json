@@ -1,0 +1,4 @@
+{
+	"title": "Наследование",
+	"files": ["description.md", "counterWithPrototype.js", "createMediator.js", "galleryBlank.js"]
+}

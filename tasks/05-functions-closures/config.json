@@ -1,0 +1,4 @@
+{
+	"title": "Функции и замыкания",
+	"files": ["description.md", "unique.js", "create-caching-function.js", "keeper.js", "createSummator.js"]
+}

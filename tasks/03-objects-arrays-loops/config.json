@@ -1,4 +1,4 @@
 {
 	"title": "Объекты, массивы, циклы",
-	"files": ["description.md", "contains.js", "createObject.js", "extractOddItems.js", "toMatrix.js", "toQueryString.js"]
+	"files": ["description.md", "contains.js", "extractOddItems.js", "toMatrix.js", "toQueryString.js"]
 }

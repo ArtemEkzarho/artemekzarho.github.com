@@ -1,5 +1,6 @@
 	'use strict';
 
+	var converter = new Markdown.Converter();
 	var sideTabs = $('.side-tabs');
 	var mainWrap = $('.main-wrap');
 	var portfolio = $('.portfolio-main');
@@ -81,11 +82,18 @@
 			.then(function (dsk) {
 				for(var j = 0; j < arguments.length; j += 1) {
 					var txt = arguments[j][0];
-					$('<pre><code></code></pre>').appendTo($('.portfolio.content-wrap.task'+ (i + 1) + ' .content.file' + (j + 1))).children().text(txt);
-					//подключаем библеотеку с подсветкой
-					$('pre code').each(function(i, block) {
-					    hljs.highlightBlock(block);
-					});
+					if (j === 0) {
+						var converteredTxt = converter.makeHtml(txt);
+						$('.portfolio.content-wrap.task'+ (i + 1) + ' .content.file' + (j + 1)).append(converteredTxt);
+					} else if ((i === 6) && (j === 1)) {
+						$('.portfolio.content-wrap.task7.content.file').append(txt);
+					} else {
+						$('<pre><code></code></pre>').appendTo($('.portfolio.content-wrap.task'+ (i + 1) + ' .content.file' + (j + 1))).children().text(txt);
+						//подключаем библеотеку с подсветкой
+						$('pre code').each(function(i, block) {
+						    hljs.highlightBlock(block);
+						});
+					}
 				}
 			})
 	}
