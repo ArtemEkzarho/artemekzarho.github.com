@@ -46,6 +46,17 @@ table {
 
 /*###################################################*/
 
+.description {
+	width: 980px;
+	margin: 0 auto;
+	margin-top: 15px;
+	background: #CCCCCC;
+	padding: 20px 10px;
+	border: 1px solid;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 17px;
+}
+
 .portfolio-main {
 	outline: 1px solid;
 	width: 1000px;
