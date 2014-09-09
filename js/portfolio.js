@@ -61,7 +61,6 @@
 		taskContent.empty();
 		$('.active', navigation).removeClass('active');
 		nav.addClass('active');
-			console.log(path + fileName);
 		$.get(path + fileName, function(response) {
 			if (regJS.test(fileName)) {
 				taskContent.append('<pre><code></code></pre>');
