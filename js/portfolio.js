@@ -57,7 +57,6 @@
 		var folderName = tasksFolders[taskNumber],
 			path = 'tasks/' + folderName + '/',
 			fileName = nav.text();
-			console.log(fileName);
 
 		taskContent.empty();
 		$('.active', navigation).removeClass('active');
@@ -65,7 +64,6 @@
 			console.log(path + fileName);
 		$.get(path + fileName, function(response) {
 			if (regJS.test(fileName)) {
-				console.log(1);
 				taskContent.append('<pre><code></code></pre>');
 				$('code', taskContent).text(response);
 			} else if (regMD.test(fileName)) {
