@@ -71,6 +71,9 @@ table {
 	text-align: center;
 	cursor: pointer;
 }
+.task-name:last-child {
+	border-bottom: none;
+}
 .task-name:hover {
 	background-color: #93C2E2;
 }
@@ -118,7 +121,7 @@ table {
 .content {
 	padding: 10px;
 	background-color: #DDD;
-	min-height: 402px;
+	min-height: 401px;
 	word-wrap: break-word;
 	font-size: 15px;
 	font-family: monospace;
@@ -134,127 +137,3 @@ table {
     user-select: none;
 }
 
-/*.portfolio-main {
-	outline: 1px solid;
-	width: 1000px;
-	margin: 0 auto;
-	margin-top: 20px;
-	background-color: #CCCCCC;
-}
-
-.portfolio.side-bar {
-	width: 150px;
-	float: left;
-	margin: 5px;
-		margin-top: 45px; 
-		background-color: #FFFFFF; 
-	border-right: 1px solid rgb(145, 145, 145);
-		border-radius: 5px; 
-	padding-top: 33px;
-	margin-top: 15px;
-}
-
-
-.side-tabs {
-	list-style: none;
-	font-family: 'Open Sans', sans-serif;
-	padding: 10px;
-	text-transform: uppercase;
-	color: #5a5a5a;
-	font-size: 11px;
-	font-weight: bold;
-}
-
-.side-tabs li {
-	margin-bottom: 10px;
-	background-color: rgb(200, 253, 253);
-	padding: 7px;
-	text-align: center;
-	cursor: pointer;
-}
-
-.side-tabs li:hover {
-	background-color: #99CCFF;
-}
-
-.main-wrap {
-	display: flex;
-}
-
-.portfolio.content-wrap {
-	float: right;
-	margin: 5px;
-		background-color: #FFFFFF;
-		border: 1px solid rgb(145, 145, 145);
-		border-radius: 5px;
-}
-
-.top-tabs {
-	color: #5a5a5a;
-	font-size: 11px;
-	font-weight: bold;
-	padding: 14px 10px;
-	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
-	margin-top: 5px;
-}
-
-.top-tabs li {
-	display: inline-block;
-	margin-right: 5px;
-	background-color: rgb(200, 253, 253);
-	padding: 8px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	max-width: 100px;
-	cursor: pointer;
-}
-
-.top-tabs li:hover {
-	background-color: #99CCFF;
-}
-
-.content {
-	background-color: #FFFFFF;
-	margin-top: 9px;
-	margin-bottom: 10px;
-	padding: 10px;
-	border: 1px solid rgb(145, 145, 145); 
-}
-
-footer {
-	clear: both;
-	font-family: 'Open Sans', sans-serif;
-	padding: 10px;
-	font-size: 0.9em;
-}
-
-.hide {
-	display: none;
-}
-
-.side-tabs .select {
-	background-color: #99CCFF;
-}
-
-.top-tabs .select {
-	background-color: #99CCFF;
-}
-
-.noselect {
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-
-.content {
-	word-wrap: break-word;
-	font-size: 15px;
-	font-family: monospace;
-	width: 800px;
-} */

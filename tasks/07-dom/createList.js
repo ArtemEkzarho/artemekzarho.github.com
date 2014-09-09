@@ -1,6 +1,6 @@
 'use strict';
 
-//функция проверки на массив
+//test for array
 function isArray (obj) {
 	return Object.prototype.toString.call(obj) === '[object Array]';
 }

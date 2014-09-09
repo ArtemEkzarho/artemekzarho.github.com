@@ -39,9 +39,7 @@
 
 	function showNav(task, files) {
 		taskNumber = task.index();
-		console.log(taskNumber);
 		var taskFiles = tasksArr[taskNumber].files;
-		console.log(taskFiles);
 
 		$('.active', taskNamesContainer).removeClass('active');
 		task.addClass('active');
@@ -59,13 +57,15 @@
 		var folderName = tasksFolders[taskNumber],
 			path = 'tasks/' + folderName + '/',
 			fileName = nav.text();
+			console.log(fileName);
 
 		taskContent.empty();
 		$('.active', navigation).removeClass('active');
 		nav.addClass('active');
-
+			console.log(path + fileName);
 		$.get(path + fileName, function(response) {
 			if (regJS.test(fileName)) {
+				console.log(1);
 				taskContent.append('<pre><code></code></pre>');
 				$('code', taskContent).text(response);
 			} else if (regMD.test(fileName)) {

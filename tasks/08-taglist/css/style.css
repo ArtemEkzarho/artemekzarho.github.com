@@ -1,0 +1,63 @@
+.taglist {
+	position: relative;
+	left: 25%;
+	width: 50%;
+	margin-top: 15px;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+.taglist .edit-btn {
+	color: #039;
+	cursor: pointer;
+}
+.taglist .tags {
+	margin: 10px 5px 15px 0;
+	font-weight: bold;
+}
+.taglist .tag {
+	display: inline-block;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background-color: #CCC;
+	border-radius: 3px;
+}
+.taglist .tag-name {
+	display: inline-block;
+	padding: 5px 10px;
+}
+.taglist .delete-tag {
+	display: inline-block;
+	border-left: 1px solid #000;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+.taglist form {
+	display: none;
+}
+.taglist input {
+	float: left;
+	padding: 0 5px;
+	width: 80%;
+	height: 35px;
+	border: 1px solid #999;
+	line-height: 2.5;
+}
+.taglist .add-btn {
+	height: 35px;
+	background-color: #09F;
+	border: 1px solid #09F;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2.5;
+	cursor: pointer;
+}
+.taglist .add-btn:hover {
+	background-color: #09C;
+}
+.taglist button {
+	display: none;
+}

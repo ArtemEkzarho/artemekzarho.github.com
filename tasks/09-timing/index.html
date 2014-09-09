@@ -3,25 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Секундомер</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<div class="container">
-		<div class="row" id = "first">
-			<div class="col-xs-4">
-				<h2 class="stopwatch-current">00:00:00:000</h2>
-				<div class="stopwatch-laps">
-				</div>
-			</div>
-			<div class="col-xs-4 stopwatch-controls">
-				<div class="btn-group btn-group-lg">
-					<button class="btn btn-primary">Start</button>
-					<button class="btn btn-info">Lap</button>
-				</div>
-				<button class="btn btn-danger btn-sm">Reset</button>
-			</div>
-		</div>
+		
 	</div>
-	<script src="js/timer.js"></script>
+    <script src="js/timer.js"></script>
+    <script>
+		var timer1 = new Timer(document.querySelector('.container'));
+		var activeTimer = timer1;
+	</script>
 </body>
 </html>

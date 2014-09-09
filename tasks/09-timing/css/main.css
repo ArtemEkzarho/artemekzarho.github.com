@@ -1,15 +1,14 @@
 .container {
 	width: 960px;
-	margin: 0 auto;
 }
 
 .stopwatch-controls {
 	margin-top: 20px;
 }
 
-.stopwatch-controls .btn-danger {
-	margin-left: 20px;
-}
+	.stopwatch-controls .btn-danger {
+		margin-left: 20px;
+	}
 
 .stopwatch-laps {
 	margin-top: 20px;
@@ -27,7 +26,6 @@
 	font-size: 12px;
 	cursor: pointer;
 }
-
-.btn-primary {
-	width: 70px;
+.stopwatch-current {
+	text-align: right;
 }
