@@ -1,0 +1,116 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.taglist-main {
+	margin: 0px auto;
+	width: 500px;
+}
+
+.taglist-header {
+	margin-top: 10px;
+	padding: 10px;
+}
+
+.taglist-header p {
+	font: bold 12pt sans-serif;
+	color: #00BFFF;
+	border-bottom: 2px dashed #00BFFF;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.taglist-header ul {
+	margin-top: 15px;
+}
+
+.taglist-header ul li {
+	display: inline-block;
+	padding: 2px 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	background: #696969;
+	color: #D3D3D3;
+	font: bold 10pt sans-serif;
+	border-radius: 3px;
+}
+
+.taglist-header ul span {
+	display: inline-block;
+	padding: 2px 5px;
+	margin-top: 5px;
+	background: #696969;
+	color: #D3D3D3;
+	font: bold 10pt sans-serif;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.taglist-form .text{
+	width: 375px;
+	height: 30px;
+	margin-left: 9px;
+	font: 14pt sans-serif;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+
+.taglist-form .button{
+	height: 36px;
+	padding-bottom: 0px;
+	padding-top: 2px;
+	margin-left: 0px;
+	font: bold 12pt sans-serif;
+	background: #00BFFF;
+	border: 1px solid grey;
+	border-radius: 3px;
+	color: white;
+}
+
+.edit {
+	
+}
+
+.no-edit {
+	display: none;
+}

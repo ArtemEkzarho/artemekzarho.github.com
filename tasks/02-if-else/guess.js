@@ -1,27 +1,29 @@
-var guess = 3; // The main number that will make come true
-var hypothesis = prompt('Введите число от 0 до 10:'); 
+'use strict';
 
-if (!isNaN(hypothesis)) {
+var guessNumber = 4,
+	userNumber = prompt('Введите число от 1 до 10',''),
+	parseNumber = parseInt(userNumber, 10); 
 
-	var userGuess = parseInt(hypothesis, 10);
 
-	if (userGuess <= 10 && userGuess >= 0) {
-
-		if (userGuess === guess) {
-			console.log('Пользователь угадал число!');
+if (userNumber !== null) {
+//проверяем нажали ли пользователь "отмена"
+	if (!isNaN(parseNumber) && !isNaN(+userNumber)) { 
+	//проверяем являеются ли введенные данные числом
+		if((parseNumber <= 10) && (parseNumber >= 0)){
+		//проверяем попадают ли загаданные числа в заданый диапазон
+			if(parseNumber === guessNumber) {
+			//проверяем совпадает ли введенное число с загаданным?
+				console.log('Паца, ты красава! Угадал!') 
+			} else {
+				console.log('Не, не угадал =(')
+			}
 		} else {
-			console.log('Пользователь не угадал число.');
+			console.log('Не правильно. Введите число в заданном диапазоне.')
 		}
-	} else if (hypothesis === '') {
-		console.log('Пользователь забыл ввести данные.');		
-		// User press ok-key but not enter data
-	} else if (hypothesis === null) {
-		console.log('Пользователь отказался ввести данные.');	
-		// User press cancel
 	} else {
-		console.log('Пользователь ввел число не из предложенного диапазона.'); 
+		console.log('Кажется ты ввел не число, а что-то другое.')
 	}
-
 } else {
-	console.log('Пользователь ввел неверные данные.');			
+	console.log('Братка, не хочет играть в угадайку.')
 }
+

@@ -1,4 +1,4 @@
 {
 	"title": "Ветвление",
-	"files": ["description.md", "guess.txt", "task.js"]
+	"files": ["description.md", "guess.js", "task.js"]
 }
