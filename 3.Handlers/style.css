@@ -1,0 +1,38 @@
+.quest {
+    border-bottom: 1px solid #aaa; 
+    margin-bottom: 10px; 
+}
+.questcolor {
+    background: #F6F6F6;
+}
+.questselectedcolor{ 
+    background: #ddd;
+}
+.answer {
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 10px;
+}
+.vote {
+    float: left; 
+    text-align: center; 
+    width: 21px; 
+    margin-right: 20px;
+}
+.vote-up, .vote-down{
+    display: block;
+    margin: 0px auto;
+    width: 21px;
+    height: 25px;
+}
+.vote-up{
+    background-position: 0px 0px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.vote-down{
+    background-position: 0px -20px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
