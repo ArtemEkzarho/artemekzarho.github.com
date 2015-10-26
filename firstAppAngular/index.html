@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<meta charset="utf-8">
+
+</head>
+<body>
+<div ng-controller="phoneController">
+    <div ng-repeat="button in modes">
+        <label>
+            <input type="radio" ng-model="data.mode" value="{{button.value}}" name="modes" />
+            {{button.label}}
+        </label>
+    </div>
+    <div ng-include="setFile()"></div>
+</div>
+<script src="js/lib/angular.min.js"></script>
+<script type="text/javascript">
+var myApp = angular.module('myApp', []);
+</script>
+<script src="js/controllers/phonesController.js"></script>
+</body>
