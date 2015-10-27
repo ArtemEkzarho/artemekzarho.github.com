@@ -1,0 +1,9 @@
+p {
+    font-size: 30px;
+    font-family: monospace;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

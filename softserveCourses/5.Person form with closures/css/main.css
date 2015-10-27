@@ -1,0 +1,37 @@
+td {
+    width: 40%;
+}
+
+p {
+    margin: 0px;
+}
+
+.inputCell, .textCell {
+    width: 60%;
+}
+
+.editForm, .reviewForm {
+    margin-left: 20px;
+    width: 300px;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.editForm table, .reviewForm table, .editForm table tr td input {
+    width: 100%;
+}
+
+.editForm .reviewBtn, .reviewForm .editBtn {
+    width: 200px;
+    display: block;
+    margin: 15px auto;
+}
+
+.reviewForm table tr td {
+    height: 23px;
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    font-size: 32px;
+}
+
+.show {
+    display: table-cell;
+}
+
+.mainWrap {
+    display: inline-block;
+    cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.hide {
+    display: none;
+}

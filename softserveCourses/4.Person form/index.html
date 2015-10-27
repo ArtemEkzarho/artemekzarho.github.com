@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>group list</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <script src="person.js"></script>
+    </head>
+    <body>
+        <h2>Person</h2>
+        <div class="editForm" id="editForm">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td class="inputCell"><input type="text" id="nameInput"/></td>
+                </tr>
+                <tr>
+                    <td>Lastname:</td>
+                    <td class="inputCell"><input type="text" id="lastnameInput"/></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td class="inputCell"><input type="text" id="ageInput"/></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td class="inputCell"><input type="text" id="genderInput"/></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td class="inputCell"><input type="text" id="emailInput"/></td>
+                </tr>
+                <tr>
+                    <td>Skype:</td>
+                    <td class="inputCell"><input type="text" id="skypeInput"/></td>
+                </tr>
+            </table>
+            <button id="reviewBtn" class="reviewBtn">Review</button>
+        </div>
+        <div class="reviewForm hide" id="reviewForm">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td class="textCell"><p id="nameValue"></p></td>
+                </tr>
+                <tr>
+                    <td>Lastname:</td>
+                    <td class="textCell"><p id="lastnameValue"></p></td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td class="textCell"><p id="ageValue"></p></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td class="textCell"><p id="genderValue"></p></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td class="textCell"><p id="emailValue"></p></td>
+                </tr>
+                <tr>
+                    <td>Skype:</td>
+                    <td class="textCell"><p id="skypeValue"></p></td>
+                </tr>
+            </table>
+            <button id="editBtn" class="editBtn">Edit</button> 
+        </div>
+    </body> 
+</html>
