@@ -1,7 +1,7 @@
 'use strict';
 
 function Controller () {
-	var view = new View();
+    var view = new View();
 
     return this;
 }

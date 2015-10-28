@@ -3,23 +3,36 @@
 function View(clockWrap) {
     this.addClock = function(state) {
         var date = new Date,
-            hours = date.getHours(),
-            minutes = date.getMinutes(),
-            seconds = date.getSeconds(),
-            month = date.getMonth() + 1,
-            day = date.getDate(),
-            year = date.getFullYear();
+            hours = toDouble(date.getHours()),
+            minutes = toDouble(date.getMinutes()),
+            seconds = toDouble(date.getSeconds()),
+            month = toDouble(date.getMonth() + 1),
+            day = toDouble(date.getDate()),
+            year = date.getFullYear(),
+            resultStr;
 
-           if (state === 'time') {
-               clockWrap.className = 'time';
-               clockWrap.innerHTML = hours + ':' + minutes;
-           } else if (state === 'extendedTime') {
-               clockWrap.className = 'extendedTime';
-               clockWrap.innerHTML = hours + ':' + minutes + ':' + seconds;
-           } else {
-               clockWrap.className = 'date';
-               clockWrap.innerHTML = day + '/' + month + '/' + year;
-           }
+            if (state === 'time') {
+                clockWrap.className = 'time';
+                resultStr = hours + ':' + minutes;
+                clockWrap.innerHTML = resultStr;
+            } else if (state === 'extendedTime') {
+                resultStr = hours + ':' + minutes + ':' + seconds;
+                clockWrap.className = 'extendedTime';
+                clockWrap.innerHTML = resultStr;
+            } else {
+                resultStr = day + '/' + month + '/' + year;
+                clockWrap.className = 'date';
+                clockWrap.innerHTML = resultStr;
+            }
+    }
+
+    function toDouble (number) {
+        var str = String(number); 
+        if (str.length === 1) {
+            str = '0' + str;
+        }
+
+        return str;
     }
 
     return this;

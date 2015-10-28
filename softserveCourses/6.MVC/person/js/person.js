@@ -1,9 +1,24 @@
 'use strict';
 
 function Person (obj) {
-    //i think that this variable is not needed, because 
-    //it and its keys are not used singly in next code
     var data = obj;
+      
+    this.setData = function (inputs) { 
+        var keys = this.getKeys();
+
+        [].forEach.call(inputs, function (item, i, arr) {
+            data[keys[i]] = item.value;
+        });
+
+    };
+
+    this.getData = function (textPlaces) {
+        var values = this.toArray();
+
+        [].forEach.call(textPlaces, function (item, i, arr) {
+            arr[i].innerHTML = values[i];
+        });    
+    };
 
     this.toArray = function () {
         var result = [],
@@ -15,24 +30,17 @@ function Person (obj) {
         
         return result;
     };
-      
-    this.setData = function (inputs) {
-        var i = 0,
+
+    this.getKeys = function () {
+        var result = [],
             key;
 
-        for (var key in data) {
-            data[key] = inputs[i].value;
-            i++;
-        }    
-    };
+        for (key in data) {
+            result.push(key);
+        }
 
-    this.getData = function (textPlaces) {
-        var keys = this.toArray();
-
-        Array.prototype.forEach.call(textPlaces, function (item, i, arr) {
-            arr[i].innerHTML = keys[i];
-        });    
-    };
+        return result;
+    }
 
     return this;
 }

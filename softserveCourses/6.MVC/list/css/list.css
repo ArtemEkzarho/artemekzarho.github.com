@@ -1,5 +1,5 @@
 * {
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 table {
@@ -12,10 +12,10 @@ td, th {
 }
 
 thead tr:nth-child(1) {
-	background-color: white;
+    background-color: white;
 }
 
 tr:nth-child(odd) {
-	background-color: #E2E2E2;
+    background-color: #E2E2E2;
 }
 

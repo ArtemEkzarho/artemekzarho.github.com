@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function () {
-    var clockWrap =  document.querySelector('#clock');
+    var clockWrap = helpers.getEl('#clock');
 
     new Clock(clockWrap);
 }, false);

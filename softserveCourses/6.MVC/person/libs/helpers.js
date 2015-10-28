@@ -1,9 +1,16 @@
 'use strict'
 
-function getEL (selector) {
-    return document.querySelector(selector);
-}
+var helpers = (function (){
+    function getEl (selector) {
+        return document.querySelector(selector);
+    }
 
-function getAllEl (selector) {
-    return document.querySelectorAll(selector);
-}
+    function getAllEl (selector) {
+        return document.querySelectorAll(selector);
+    }
+
+    return {
+        getEl: getEl,
+        getAllEl: getAllEl,
+    }
+}());

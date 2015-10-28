@@ -1,7 +1,7 @@
 'use strict';
 
 function View () {
-    var list = getEl('#students tbody'),
+    var list = helpers.getEl('#students tbody'),
         finalTemplate= '',
         students = [
             new Person('Artem', 'Ekzarkho', 'boy'),
@@ -14,10 +14,10 @@ function View () {
             new Person('Oleksandr', 'Den\'ha', 'boy')
         ],
         row = '<tr>' +
-                  '<td><%=name%></td>' +
-                  '<td><%=surname%></td>' +
-                  '<td><%=gender%></td>' +
-              '</tr>';
+                '<td><%=name%></td>' +
+                '<td><%=surname%></td>' +
+                '<td><%=gender%></td>' +
+            '</tr>';
 
     render();
 

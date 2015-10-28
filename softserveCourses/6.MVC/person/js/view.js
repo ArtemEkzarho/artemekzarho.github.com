@@ -10,11 +10,11 @@ function View () {
             skype: 'x23-rd23'
         }),
         personKeys = person.toArray(),
-        editForm = getEL('#editForm'),
-        reviewForm = getEL('#reviewForm'),
-        reviewBtn = getEL('#reviewBtn'),
-        editBtn = getEL('#editBtn'),
-        inputs = getAllEl('.inputCell input');
+        editForm = helpers.getEl('#editForm'),
+        reviewForm = helpers.getEl('#reviewForm'),
+        reviewBtn = helpers.getEl('#reviewBtn'),
+        editBtn = helpers.getEl('#editBtn'),
+        inputs = helpers.getAllEl('.inputCell input');
 
     render();
 
@@ -22,14 +22,14 @@ function View () {
     editBtn.addEventListener('click', goToEdit, false);
 
     function render () {
-        Array.prototype.forEach.call(inputs, function (item, i, arr) {
+        [].forEach.call(inputs, function (item, i, arr) {
             arr[i].value = personKeys[i];
         });
     } 
 
     function goToReview () {
-        var inputs = getAllEl('.inputCell input'),
-            textPlaces = getAllEl('.textCell p');
+        var inputs = helpers.getAllEl('.inputCell input'),
+            textPlaces = helpers.getAllEl('.textCell p');
 
         editForm.className = 'editForm hide';
         reviewForm.className = 'reviewForm';

@@ -2,12 +2,12 @@
 
 function Person (name, surname, gender) {
     var name = name,
-    	surname = surname,
-    	gender = gender;
+        surname = surname,
+        gender = gender;
 
     return {
-    	name: name,
-    	surname: surname,
-    	gender: gender
+        name: name,
+        surname: surname,
+        gender: gender
     }
 }
