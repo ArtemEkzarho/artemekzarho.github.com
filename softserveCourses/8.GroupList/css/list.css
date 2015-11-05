@@ -9,9 +9,11 @@ table {
 
 #editableForm {
     float: left;
-    margin-left: 70px;
+    margin-left: 25px;
     line-height: 0;
     width: 320px;
+    border-left: 1px solid #B9B9B9;
+    padding-left: 25px;
 }
 
     #editableForm span {

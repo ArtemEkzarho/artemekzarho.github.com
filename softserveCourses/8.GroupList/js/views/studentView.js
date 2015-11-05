@@ -5,17 +5,21 @@ function StudentView ($wrap, student) {
         '<td><%=surname%></td>' +
         '<td><%=gender%></td>' +
         '<td class="actions"><button class="editBtn" id="person_<%=id%>">Edit</button></td>',
-        finalRow;
+        finalRow,
+        model = student;
 
-    render(student.getStudentData());
+        
+
+    render(model.getStudentData());
 
     $wrap.find('.editBtn').on('click', function () {
-        mediator.publish('showEditView', student);
+        mediator.publish('showEditView', model);
     });
 
     mediator.subscribe('rerenderStudentView', function (data) {
-        render(data.getStudentData());
-        console.log($wrap);
+        if (data.getStudentData().id === model.getStudentData().id) {
+            render(data.getStudentData());
+        }
     });
 
     function render (list) {

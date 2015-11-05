@@ -1,15 +1,15 @@
 'use strict';
 
 function TableView ($place, students) {
-    var studentsViews = [];
+    var studentsViews = [],
+        $tr;
 
     render();
 
     function render () {
-        $(students).each(function (index, student) {
-            var $tr, 
-                studentView;
+        var studentView;
 
+        $(students).each(function (index, student) {
             $tr = $('<tr></tr>');
             $place.append($tr);
 
