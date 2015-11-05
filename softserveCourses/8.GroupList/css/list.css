@@ -8,9 +8,10 @@ table {
 }
 
 #editableForm {
-	float: left;
-	margin-left: 70px;
-	line-height: 0;
+    float: left;
+    margin-left: 70px;
+    line-height: 0;
+    width: 320px;
 }
 
     #editableForm span {
@@ -18,7 +19,7 @@ table {
     }
 
 .clear {
-	clear: both;
+    clear: both;
 }
 
 td, th {
@@ -46,21 +47,25 @@ tr:nth-child(odd) {
     }
 
     .editBtn:hover {
-    	opacity: 1;
+        opacity: 1;
     }
 
 .inputLabel {
-	width: 100px;
+    width: 100px;
     display: inline-block;
 }
 
 input {
-	height: 24px;
-	font-size: 17px;
+    height: 24px;
+    font-size: 17px;
 }
 
 .save, .preview, .edit {
     width: 100px;
     height: 40px;
     margin-right: 10px;
+}
+
+.btns {
+    text-align: center;
 }
