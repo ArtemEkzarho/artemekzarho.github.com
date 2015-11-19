@@ -1,0 +1,17 @@
+<div ng-controller="QuestionController">
+<div class="quest">
+<h3>{{question.text}}</h3>
+<p>{{question.author}} </p> <p><i>{{question.date}}</i></p>
+</div>
+</div>
+<div>
+<form name="answerForm">
+<fieldset>
+<p><label for="answerText">Текст ответа</label>
+<input id="answerText" ng-model="answer.text" required placeholder="Введите ответ" /></p>
+<p><label for="answerAuthor">Автор ответа</label>
+<input id="answerAuthor" ng-model="answer.author" required placeholder="Введите автора" /></p>
+</fieldset>
+<button type="submit" ng-click="save(answer, answerForm)">Сохранить</button>
+</form>
+</div>

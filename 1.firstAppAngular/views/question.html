@@ -1,0 +1,18 @@
+<div>
+<div class="quest">
+<h3>{{question.text}}</h3>
+<p>{{question.author}} </p> <p><i>{{question.date}}</i></p>
+</div>
+<h3>Ответы</h3>
+<div class="answers">
+<div ng-repeat="answer in question.answers | orderBy:sortparam" class="answer">
+<div class="vote">
+    <a class="vote-up" ng-click="voteUp(answer)"></a>
+    <span class="rate">{{answer.rate}}</span>
+    <a class="vote-down" ng-click="voteDown(answer)"></a>
+</div>
+<b>{{answer.text}}</b>
+<p>{{answer.author}}</p>
+<p><i>{{answer.date}}</i></p>
+</div>
+</div>
