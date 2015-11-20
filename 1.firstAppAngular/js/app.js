@@ -10,4 +10,5 @@ var questApp = angular.module('questApp', ["ngRoute"])
             templateUrl:'views/answer.html',
             controller:'AnswerController'
         });
+        $routeProvider.otherwise({redirectTo: '/question'});
 });
