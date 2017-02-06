@@ -53,7 +53,7 @@ function Calculator () {
     }
 
     this.addDot = function (which) {
-        if (operands[which].indexOf('.') !== -1) {
+        if (String(operands[which]).indexOf('.') !== -1) {
             return;
         }
 

@@ -85,11 +85,22 @@ function CalculatorView (container) {
     }
     //set the polarity)
     function plusMinusPress () {
+        if (endCalculation) {
+            return;
+        }
+
         calculator.setPolarity(currentOperand);
         updateEntryField();
     }
     //dot btn 
     function dotPress () {
+        if (endCalculation) {
+            calculator.clearAllFields();
+            currentOperand = 0;
+
+            endCalculation = false;
+        }
+
         calculator.addDot(currentOperand);
         updateEntryField();
     }
