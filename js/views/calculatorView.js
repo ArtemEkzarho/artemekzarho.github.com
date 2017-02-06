@@ -8,7 +8,8 @@ function CalculatorView (container) {
         currentOperand = 0,
         //states
         actionBtnPressed = false,
-        equalBtnPressed = false;
+        equalBtnPressed = false,
+        endCalculation = false;
         
     render();
     
@@ -53,6 +54,13 @@ function CalculatorView (container) {
 
     //numbers handler
     function numberPress () {
+        if (endCalculation) {
+            calculator.clearAllFields();
+            currentOperand = 0;
+
+            endCalculation = false;
+        }
+
         calculator.addOperandValue(currentOperand, this.innerHTML);
         updateEntryField();
         
@@ -87,6 +95,8 @@ function CalculatorView (container) {
     }
     //action btns + - / *
     function actionPress () {
+        endCalculation = false;
+
         if (actionBtnPressed || equalBtnPressed) {
             calculator.setOperator(this.innerHTML);
             return;
@@ -107,6 +117,7 @@ function CalculatorView (container) {
         } 
 
         equalBtnPressed = true;
+        endCalculation = true;
 
         calculator.calculate();
         updateEntryField(2);
