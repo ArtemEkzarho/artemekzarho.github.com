@@ -51,46 +51,46 @@ function CalculatorView (container, ctrl) {
             case 8: delPress();
                 break;
             case 111:
-            case 191: actionPress('/');
+            case 191: actionPress(event, '/');
                 break;  
             case 107:
-            case 187: actionPress('+');
+            case 187: actionPress(event, '+');
                 break;
             case 106:
-            case 56: actionPress('*');
+            case 56: actionPress(event, '*');
                 break; 
             case 109:
-            case 189: actionPress('-');
+            case 189: actionPress(event, '-');
                 break;
             case 49:
-            case 97: numberPress('1');
+            case 97: numberPress(event, '1');
                 break;
             case 50:
-            case 98: numberPress('2');
+            case 98: numberPress(event, '2');
                 break;  
             case 51:
-            case 99: numberPress('3');
+            case 99: numberPress(event,'3');
                 break;
             case 52:  
-            case 100: numberPress('4');
+            case 100: numberPress(event, '4');
                 break;
             case 53:                  
-            case 101: numberPress('5');
+            case 101: numberPress(event, '5');
                 break;
             case 54:  
-            case 102: numberPress('6');
+            case 102: numberPress(event, '6');
                 break;
             case 55:  
-            case 103: numberPress('7');
+            case 103: numberPress(event, '7');
                 break;
             case 56:  
-            case 104: numberPress('8');
+            case 104: numberPress(event, '8');
                 break;
             case 57:  
-            case 105: numberPress('9');
+            case 105: numberPress(event, '9');
                 break; 
             case 48: 
-            case 96: numberPress('0');
+            case 96: numberPress(event, '0');
                 break;
             case 187:  
             case 13: calculatePress();
@@ -112,7 +112,7 @@ function CalculatorView (container, ctrl) {
     }
 
     //numbers handler
-    function numberPress (number) {
+    function numberPress (event, number) {
         number = number || this.innerHTML
 
         if (endCalculation) {
@@ -166,7 +166,7 @@ function CalculatorView (container, ctrl) {
         updateEntryField();
     }
     //action btns + - / *
-    function actionPress (action) {
+    function actionPress (event, action) {
         action = action || this.innerHTML;
 
         endCalculation = false;
