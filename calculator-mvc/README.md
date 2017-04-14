@@ -2,5 +2,5 @@
 
 Basic useful list:
 
- * made in vanila js
+ * made on vanila js
  * awesome MVC
