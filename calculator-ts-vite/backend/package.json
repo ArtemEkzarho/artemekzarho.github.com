@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-prod": "tsc && node ../dist/backend/index.js",
+    "start": "node ../dist/backend/index.js",
+    "build": "tsc",
     "watch-dev": "nodemon -L src/index.ts"
   },
   "keywords": [],
