@@ -1,5 +1,4 @@
 # Calculator
 
- * made on vanila
-
+ * Made with Vanilla JS
 https://artemekzarho.github.io/
